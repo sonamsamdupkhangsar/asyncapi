@@ -24,6 +24,7 @@ mkdir streetlights && cd "$_"
 3. Create asyncapi.yaml by copying the asyncapi.yaml from root of repo.
 4. Trigger generation of the Node.js code
 ```
+cp ../asyncapi.yaml .;
 ag asyncapi.yaml @asyncapi/nodejs-template -o output -p server=mosquitto
 ```
 5. cd to generated output folder
@@ -32,23 +33,23 @@ cd output && ls
 ```
 
 ## Running your code
-1. install depdencies 
+6. install depdencies 
 ```
 npm install
 ```
-2. start app
+7. start app
 ```
 npm start
 ```
-3.  Open new terminal, install mqtt library
+8.  Open new terminal, install mqtt library
 ```
 npm install mqtt -g
 ```
-4.  send valid message to app
+9.  send valid message to app
 ```
 mqtt pub -t 'light/measured' -h 'test.mosquitto.org' -m '{"id": 1, "lumens": 3, "sentAt": "2017-06-07T12:34:32.000Z"}'
 ```
-5. send invalid message
+10. send invalid message
 ```
 mqtt pub -t 'light/measured' -h 'test.mosquitto.org' -m '{"id": 1, "lumens": "3", "sentAt": "2017-06-07T12:34:32.000Z"}'
 ```
