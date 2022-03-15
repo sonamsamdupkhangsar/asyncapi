@@ -1,22 +1,19 @@
 # asyncapi
-This is my AsyncApi learning project.
+This is my [AsyncApi](https://www.asyncapi.com/) learning project.
 
-It uses the asyncapi.yaml to validate messages.  
-Messages are published and validated agains the spec.
+The code is auto generated using [Generator](https://www.npmjs.com/package/@asyncapi/generator) tooling with templating tool from
+@asyncapi/nodejs-template.
 
+The asyncapi.yaml is the Streetlights api spefication.
+It uses [mosquitto] (https://mosquitto.org/) message broker. The api also specifies the message published for the channel `ligths/measured`.  
 
-This project uses asyncapi templates to generate code.
-In this example you will publish message and the message is validated and logged.
-
-
-Fore more refer to [asyncapi](https://www.asyncapi.com/), and [Generator](https://www.npmjs.com/package/@asyncapi/generator) used in this repo.
 
 ## output
 Nodejs generated code in output folder
 
 ## Generating code
 
-1. Install the generator to use it as a command-line tool
+1. Install the [generator](https://github.com/asyncapi/generator) to use it as a command-line tool
 ```
 npm install -g @asyncapi/generator
 ```
