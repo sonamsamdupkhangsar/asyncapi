@@ -1,7 +1,15 @@
 # asyncapi
 This is my AsyncApi learning project.
 
-It uses the asyncapi.yaml to validate messages.  Messages are published and validated agains the spec.
+It uses the asyncapi.yaml to validate messages.  
+Messages are published and validated agains the spec.
+
+
+This project uses asyncapi templates to generate code.
+In this example you will publish message and the message is validated and logged.
+
+
+Fore more refer to [asyncapi](https://www.asyncapi.com/), and [Generator](https://www.npmjs.com/package/@asyncapi/generator) used in this repo.
 
 ## output
 Nodejs generated code in output folder
