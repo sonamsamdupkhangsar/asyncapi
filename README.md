@@ -16,7 +16,7 @@ Nodejs generated code in output folder
 
 ## Generating code
 
-1. Install the generator to use it as a command-line tool
+1. Install the [generator](https://github.com/asyncapi/generator) to use it as a command-line tool
 ```
 npm install -g @asyncapi/generator
 ```
