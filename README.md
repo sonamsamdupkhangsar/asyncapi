@@ -1,6 +1,8 @@
 # asyncapi
 This is my AsyncApi learning project.
 
+It uses the asyncapi.yaml to validate messages.  Messages are published and validated agains the spec.
+
 ## output
 Nodejs generated code in output folder
 
@@ -14,7 +16,7 @@ npm install -g @asyncapi/generator
 ```
 mkdir streetlights && cd "$_"
 ```
-3. Create asyncapi.yaml
+3. Create asyncapi.yaml by copying the asyncapi.yaml from root of repo.
 4. Trigger generation of the Node.js code
 ```
 ag asyncapi.yaml @asyncapi/nodejs-template -o output -p server=mosquitto
